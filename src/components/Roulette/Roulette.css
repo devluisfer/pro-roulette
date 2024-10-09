@@ -1,0 +1,30 @@
+/* src/components/Roulette/Roulette.css */
+
+.roulette-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .spin-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #df3428;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .spin-button:hover {
+    background-color: #b32a20;
+  }
+  
+  .spin-button:disabled {
+    background-color: #888888;
+    cursor: not-allowed;
+  }
+  
