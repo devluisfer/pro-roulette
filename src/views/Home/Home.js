@@ -1,14 +1,15 @@
-// import react from "react";
-// import logo from '../../assets/logo.svg';
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-    return (
+  const navigate = useNavigate();
 
-      <div>
-        <h1>Welcome to Pro Roulette</h1>
-        <button onClick={() => window.location.href = '/game'}>Start Game</button>
-      </div>
-    );
+  return (
+    <div>
+      <h1>Welcome to Pro Roulette</h1>
+      <button onClick={() => navigate('/game')}>Start Game</button>
+    </div>
+  );
 };
 
 export default Home;
